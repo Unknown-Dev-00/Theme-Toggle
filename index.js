@@ -1,6 +1,8 @@
 const toggle = document.getElementById("theme-toggle");
 
-toggle.onclick = function () {
+document
+  .querySelector("#theme-toggle")
+  .addEventListener("change", function (event){
   let currentTheme = document.documentElement.getAttribute("data-theme");
   let targetTheme = "light";
 
